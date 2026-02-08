@@ -1,0 +1,416 @@
+body {
+    font-family: 'barlow';
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+/* BARRA DE NAVEGACION */
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 32px;
+    font-family: 'Anton';
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    
+    padding: 8px 5px;
+    border-bottom: 2px solid black;
+
+}
+
+.nav-content{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-content-right{
+    display: flex;
+    gap: 16px;
+    justify-content: flex-end;
+    margin-right: 40px;
+}
+
+.nav-content li{
+    
+    border-bottom: 4px solid transparent;
+    list-style: none;
+    padding: 0 8px;
+    height: 100%;
+}
+
+.nav-content li:hover{
+    border-bottom: 2px solid black; 
+}
+
+.navbar li a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 8px;
+    text-decoration: none;
+}
+
+#logo-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#logo{
+    margin-left: 40px;
+    height: 32px;
+}
+
+#index-body{
+    margin-top: 70px;
+}
+
+/* BANNER INICIAL */
+.banner-content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.banner-content img{
+    width: 50%;
+    height: 50%;
+    display: block;
+}
+
+
+/* NUESTRA HISTORIA */
+.historia-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.historia-text{
+    flex: 1;
+    text-align: center;
+}
+
+.historia-img{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.historia-img img{
+    max-width: 100%;
+    max-height: 500px;
+}
+
+
+.historia-text p{
+    font-weight: 70;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    font-size: x-large;
+}
+
+
+/* SECCIONES */
+.content{
+    text-align: center;
+}
+h2{
+    color: olive;
+    font-family: 'Anton';
+    font-weight: 70;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    font-size: xx-large;
+}
+
+.part-1, .part-2, .part-3, .part-4{
+    position: relative;
+    height: auto;
+    width: 70%;
+    scroll-margin-top: 56px;
+}
+
+.section-group {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+/* SETLIST */
+.setlist{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+}
+.setlist-right{
+    border-left: 2px solid rgba(184, 225, 7, 0.4);
+    padding-left: 160px;
+}
+.setlist div{
+    width: 50%;
+}
+
+ol{
+    color: #261818;
+    font-size: medium;
+}
+
+ol li::marker{
+    color: #776C67;
+    font-family: 'Anton';
+}
+
+ol li{
+    margin-bottom: 8px;
+}
+
+/* MERCANCIA */
+.gallery{
+    float: left;
+    margin: 8px 12px;
+    width:30%;
+    align-items: center;
+    justify-content: center;
+
+}
+.gallery img{
+    display: fixed;
+    max-width: 200px;
+    max-height: 350px;
+}
+
+.gallery-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+}
+
+.img-footer{
+    display: fixed;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    background-color: olivedrab;
+    margin-bottom: 40px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+#gallery-footer{
+    margin: 0;
+    font-weight: normal;
+}
+
+.gallery p{
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.image-container {
+    display: fixed;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.gallery-img:hover .image-container {
+    transform: scale(1.2);
+}
+
+/* AYUDA */
+.FAQ-content{
+    margin-top: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+h4{
+    font-family: 'Anton';
+    font-size:large;
+    font-weight: 70;
+    letter-spacing: 1px;
+    margin: 0;
+    color: #776C67;
+}
+.FAQ{
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    margin-bottom: 8px;
+    border-bottom: 2px solid rgba(184, 225, 7, 0.4);
+    
+}
+
+#last-question{
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-left: 20%;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    width: 60%;
+    height: 200%;
+}
+
+
+/* FOOTER */
+footer {
+
+    margin-top: 9%;
+    padding: 20px;
+    padding-top: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row; 
+    align-items: flex-end;
+    border-top: 2px solid #B8E107;
+}
+
+#SMlogo{
+    max-height: 48px
+}
+
+footer img{
+    margin: 8px;
+    max-height: 24px;
+    
+}
+
+.div-block1{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
+
+.div-block2-3{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row; 
+    align-items: flex-start;
+    color: #B8E107;
+    font-weight: bold;
+}
+
+.footer-right {
+    padding: 20px;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+}
+
+.footer-menu{
+    width: 72px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+}
+
+.info{
+    margin-left: 64px;
+    width: 176px;
+}
+
+.language-selector{
+    margin-top: 16px;
+    width: 120px;
+    padding: 6px;
+    background-color: #B8E107;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+}
+
+/* RESPONSIVIDAD */
+@media (max-width: 768px) {
+
+    .aligned-button{
+        width: auto;
+        display: flex;
+        justify-content: center;
+    }
+    .section-group{
+        width: auto;
+    }
+    .list-fecha{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #stadium{
+        margin-bottom: 16px;
+    }
+    .dia{
+        width: 100%;
+    }
+    .setlist{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+    .setlist-right{
+        border-left: 0;
+        padding-left: 0;
+    }
+    .gallery{
+        float: center;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    
+        width:100%;
+        align-items: center;
+        justify-content: center;
+    }
+    footer{
+        padding: 20px;
+        padding-top: 16px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column; 
+        align-items: center;
+        border-top: 2px solid #B8E107;
+    }
+    #logo-container{
+        margin-right: 0;
+    }
+    #logo{
+        margin-left: 8px;
+    }
+    .bttn{
+        margin-bottom: 8px;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-bottom: 12px;
+        padding-top: 12px;
+    }
+  }
+
+  
